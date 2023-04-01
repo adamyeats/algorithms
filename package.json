@@ -2,9 +2,6 @@
   "name": "algorithms",
   "version": "0.0.0",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "jest"
