@@ -1,4 +1,4 @@
-import { LinkedListNode } from './LinkedListNode';
+import { LinkedListNode } from '../linked-list/LinkedListNode';
 
 /**
  * PlayerNode is a ListNode that contains a hp property for use in the game.

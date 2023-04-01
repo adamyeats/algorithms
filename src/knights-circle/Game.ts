@@ -1,6 +1,7 @@
 import { Die } from './Die';
-import { LinkedList } from './LinkedList';
 import { PlayerNode } from './PlayerNode';
+
+import { LinkedList } from '../linked-list/LinkedList';
 
 /**
  * Game is a class that simulates the Knights Circle game.

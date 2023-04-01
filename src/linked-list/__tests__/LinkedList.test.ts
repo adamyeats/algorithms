@@ -1,11 +1,11 @@
 import { LinkedList } from '../LinkedList';
-import { PlayerNode } from '../PlayerNode';
+import { LinkedListNode } from '../LinkedListNode';
 
 describe('LinkedList', () => {
-  let linkedList: LinkedList<PlayerNode>;
+  let linkedList: LinkedList<LinkedListNode<any>>;
 
   beforeEach(() => {
-    linkedList = new LinkedList<PlayerNode>();
+    linkedList = new LinkedList();
   });
 
   it('should have a length of 0 when first created', () => {
@@ -18,7 +18,7 @@ describe('LinkedList', () => {
   });
 
   it('should append a node to an empty list and set it as the head and tail', () => {
-    const node = new PlayerNode();
+    const node = new LinkedListNode();
 
     linkedList.append(node);
 
@@ -28,9 +28,9 @@ describe('LinkedList', () => {
   });
 
   it('should append a node to the end of the list and update the tail node', () => {
-    const node1 = new PlayerNode();
-    const node2 = new PlayerNode();
-    const node3 = new PlayerNode();
+    const node1 = new LinkedListNode();
+    const node2 = new LinkedListNode();
+    const node3 = new LinkedListNode();
 
     linkedList.append(node1);
     linkedList.append(node2);
@@ -43,9 +43,9 @@ describe('LinkedList', () => {
   });
 
   it('should allow for iteration using a for...of loop', () => {
-    const node1 = new PlayerNode('Player 1');
-    const node2 = new PlayerNode('Player 2');
-    const node3 = new PlayerNode('Player 3');
+    const node1 = new LinkedListNode();
+    const node2 = new LinkedListNode();
+    const node3 = new LinkedListNode();
 
     linkedList.append(node1);
     linkedList.append(node2);
